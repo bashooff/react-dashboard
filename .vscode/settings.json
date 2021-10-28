@@ -3,4 +3,5 @@
     "emmet.includeLanguages": {
         "javascript": "javascriptreact"
     },
+    "editor.tabCompletion": "on",
 }
