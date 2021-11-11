@@ -1,7 +1,7 @@
 /* The sidebar menu */
 .sidebar {
     height: 100%; /* 100% Full-height */
-    width: 5%; /* 0 width - change this with JavaScript */
+    width: 8.1%; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 0;
@@ -16,7 +16,7 @@
   .sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 17px;
     color: #818181;
     display: block;
     transition: 0.3s;

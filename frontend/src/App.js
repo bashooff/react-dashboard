@@ -7,6 +7,7 @@ import Home from './components/pages/Home'
 const App = () => {
 
   return (
+    <div>
     <Router>
       <Switch>
         <Route path="/">
@@ -14,6 +15,7 @@ const App = () => {
         </Route>
       </Switch>
     </Router>
+    </div>
   )
 }
 
