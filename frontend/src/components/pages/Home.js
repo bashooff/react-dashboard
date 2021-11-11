@@ -7,13 +7,19 @@ const Home = () => {
 
     return(
         <div>
-            <Header>
-
-            </Header>
-            <Sidebar>
-            </Sidebar>
-            <Dashboard></Dashboard>
-        </div>
+            <div className="row">
+                <div className="col-1">
+                    <Sidebar />
+                </div>
+                <div className="col-11">
+                    <Header></Header> 
+                    <Dashboard></Dashboard>
+                </div>
+                
+                </div>
+               
+            </div>
+        
     )
 }
 
