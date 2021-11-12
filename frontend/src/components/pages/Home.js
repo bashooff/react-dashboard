@@ -8,17 +8,15 @@ const Home = () => {
 
     return(
         <div>
-            <div className="row">
-                <div className="col-1">
+            <div className="row justify-content-center">
+                <div className="col-2">
                     <Sidebar />
                 </div>
-                <div className="col-11">
-                <Header></Header> 
+                <div className="col-10">
+                    <Header />
+                    <Dashboard />
                 </div>
-                    
-                </div>
-                <Dashboard></Dashboard>
-               
+            </div>
             </div>
         
     )
