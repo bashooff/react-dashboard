@@ -1,0 +1,10 @@
+.navbar, .navbar-expand-lg, .navbar-light {
+    background-color:#262b40;
+    box-shadow: 1px 1px 1px;
+    margin-left: 2%;
+    
+}
+
+.navbar-brand{
+    margin-left: 2%;
+}
