@@ -1,11 +1,10 @@
-import Header from "../widgets/Header"
 import Sidebar from "../widgets/Sidebar"
-import Dashboard from './Dashboard'
-import "./Home.css"
+import Header from "../widgets/Header"
+import {Table} from 'react-bootstrap'
+import LoanData from "./LoanData"
 
 
-const Home = () => {
-
+const Data = () => {
     return(
         <div>
             <div className="row justify-content-center">
@@ -14,12 +13,11 @@ const Home = () => {
                 </div>
                 <div className="col-10">
                     <Header />
-                    <Dashboard />
+                    <LoanData></LoanData>
                 </div>
             </div>
         </div>
-        
     )
 }
 
-export default Home;
+export default Data

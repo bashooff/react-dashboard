@@ -22,10 +22,26 @@
     display: block;
     transition: 0.3s;
     margin-left: 50px;
-    margin-top: 30px;
+    margin-top: 50px;
   }
   
   /* When you mouse over the navigation links, change their color */
   .sidebar a:hover {
     color: #f1f1f1;
+  }
+
+  .sidebar-brand{
+    color: #f7efef;
+    padding: 8px 8px 8px 32px;
+    font-size: 90px;
+    transition: 0.3s;
+    margin-left: 60px;
+    margin-top: -70px;
+    
+  }
+
+  .sidebar-icon{
+    font-size: 40px;
+    margin-left: -50px;
+    margin-top: -20px;
   }
