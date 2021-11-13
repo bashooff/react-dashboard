@@ -4,12 +4,14 @@ import { FaDiceSix } from "react-icons/fa";
 import { TiChartPie, TiCogOutline, TiGroupOutline  } from "react-icons/ti";
 import { AiFillDatabase } from "react-icons/ai";
 
+
 const Sidebar = () => {
     return(
         <div id="mySidebar" className="sidebar">
             <div className="sidebar-brand">
-                <FaDiceSix></FaDiceSix>
+                <FaDiceSix />
             </div>
+            <hr style={{color: "white"}}/>
             <Link to="/">
                 <div className="row">
                     <div className="col-2">

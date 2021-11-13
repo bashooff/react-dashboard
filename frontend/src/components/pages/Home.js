@@ -14,6 +14,7 @@ const Home = () => {
                 </div>
                 <div className="col-10">
                     <Header />
+                    <br />
                     <Dashboard />
                 </div>
             </div>
