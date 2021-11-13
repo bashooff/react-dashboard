@@ -4,7 +4,7 @@ import Card from "../widgets/Card";
 
 const LoanData = () => {
     return(
-        <div>
+        <div className="container-fluid">
             <Card>
             
             </Card>
