@@ -1,7 +1,7 @@
 /* The sidebar menu */
 .sidebar {
     height: 100%; /* 100% Full-height */
-    width: 300px; 
+    width: 200px; 
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 0;
@@ -17,12 +17,12 @@
   .sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 15px;
     color: #f7efef;
     display: block;
     transition: 0.3s;
-    margin-left: 50px;
-    margin-top: 50px;
+    margin-left: 40px;
+    margin-top: 20px;
   }
   
   /* When you mouse over the navigation links, change their color */
@@ -33,15 +33,15 @@
   .sidebar-brand{
     color: #f7efef;
     padding: 8px 8px 8px 32px;
-    font-size: 90px;
+    font-size: 60px;
     transition: 0.3s;
-    margin-left: 60px;
+    margin-left: 30px;
     margin-top: -70px;
     
   }
 
   .sidebar-icon{
-    font-size: 40px;
-    margin-left: -50px;
-    margin-top: -20px;
+    font-size: 30px;
+    margin-left: -30px;
+    margin-top: -12px;
   }

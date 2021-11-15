@@ -87,7 +87,7 @@ const Linechart = () => {
   
 
     return(
-        <Line data={data} options={options} plugins={options.plugins} width={400} height={150} 
+        <Line data={data} options={options} plugins={options.plugins} width={100} height={30} 
         ></Line>
     )
 

@@ -8,9 +8,9 @@ const Card = (props) => {
     return(
         <div className="card" style={{borderRadius: "25px", height:cardHeight, width:cardWidth}}>
             <div className="card-body">
-                <p class="card-text">
+                
                     {props.children}
-                    </p>
+                    
                 {/* <i class="material-icons">cloud</i> */}
             </div>
         </div>

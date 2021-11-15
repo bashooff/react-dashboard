@@ -3,6 +3,7 @@ import Card from "../widgets/Card";
 import Linechart from "../widgets/Linechart";
 import Highcharts from "highcharts"
 import HighchartsReact from 'highcharts-react-official'
+import { FcPackage, FcSalesPerformance, FcList, FcBookmark } from "react-icons/fc";
 
 const Dashboard = () => {
 
@@ -13,20 +14,60 @@ const Dashboard = () => {
             <h2>Dashboard overview</h2>
             <div className="row">
                 <div className="col-md-3 my-col">
-                    <Card title="Borrowers" text="borrowers overview" height="14rem" width="25rem"></Card>
+                    <Card title="Borrowers" text="borrowers overview" height="10rem" width="20rem">
+                        <div className="card-icon">
+                            <FcPackage></FcPackage>
+                        </div>
+                        <div className="card-title">
+                            Borrowers
+                        </div>
+                        <div className="card-text">
+                            1,200
+                        </div>
+                    </Card>
                 </div>
                 <div className="col-md-3 my-col">
-                    <Card title="Loans" height="14rem" width="25rem"></Card>
+                    <Card title="Loans" height="10rem" width="20rem">
+                    <div className="card-icon">
+                            <FcList></FcList>
+                        </div>
+                        <div className="card-title">
+                            Loans
+                        </div>
+                        <div className="card-text">
+                            1,356
+                        </div>
+                    </Card>
                 </div>
                 <div className="col-md-3 my-col">
-                    <Card title="returns" height="14rem" width="25rem"></Card>
+                    <Card title="returns" height="10rem" width="20rem">
+                    <div className="card-icon">
+                            <FcSalesPerformance></FcSalesPerformance>
+                        </div>
+                        <div className="card-title">
+                            Returns
+                        </div>
+                        <div className="card-text">
+                            14,65%
+                        </div>
+                    </Card>
                 </div>
                 <div className="col-md-3 my-col">
-                    <Card title="returns" height="14rem" width="25rem"></Card>
+                    <Card title="returns" height="10rem" width="20rem">
+                    <div className="card-icon">
+                            <FcBookmark></FcBookmark>
+                        </div>
+                        <div className="card-title">
+                            Defaults
+                        </div>
+                        <div className="card-text">
+                            56
+                        </div>
+                    </Card>
                 </div>
             </div>
             <div className="col-md-11 mt-5">
-                <Card title="Line chart" height="60rem" width="150rem">
+                <Card title="Line chart" height="30rem" width="95rem">
                     <Linechart />
                 </Card>
                 
