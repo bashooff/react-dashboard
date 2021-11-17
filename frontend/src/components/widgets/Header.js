@@ -1,5 +1,4 @@
 import "./Header.css"
-import { IconContext } from "react-icons";
 import { VscAccount } from "react-icons/vsc"
 
 const Header = () => {

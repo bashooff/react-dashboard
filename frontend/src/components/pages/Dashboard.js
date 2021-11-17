@@ -14,7 +14,7 @@ const Dashboard = () => {
             <h2>Dashboard overview</h2>
             <div className="row">
                 <div className="col-md-3 my-col">
-                    <Card title="Borrowers" text="borrowers overview" height="10rem" width="20rem">
+                    <Card title="Borrowers" text="borrowers overview" height="10rem" width="22rem">
                         <div className="card-icon">
                             <FcPackage></FcPackage>
                         </div>
@@ -27,7 +27,7 @@ const Dashboard = () => {
                     </Card>
                 </div>
                 <div className="col-md-3 my-col">
-                    <Card title="Loans" height="10rem" width="20rem">
+                    <Card title="Loans" height="10rem" width="22rem">
                     <div className="card-icon">
                             <FcList></FcList>
                         </div>
@@ -40,12 +40,12 @@ const Dashboard = () => {
                     </Card>
                 </div>
                 <div className="col-md-3 my-col">
-                    <Card title="returns" height="10rem" width="20rem">
+                    <Card title="returns" height="10rem" width="22rem">
                     <div className="card-icon">
                             <FcSalesPerformance></FcSalesPerformance>
                         </div>
                         <div className="card-title">
-                            Returns
+                            Portfolio return
                         </div>
                         <div className="card-text">
                             14,65%
@@ -53,7 +53,7 @@ const Dashboard = () => {
                     </Card>
                 </div>
                 <div className="col-md-3 my-col">
-                    <Card title="returns" height="10rem" width="20rem">
+                    <Card title="returns" height="10rem" width="22rem">
                     <div className="card-icon">
                             <FcBookmark></FcBookmark>
                         </div>
