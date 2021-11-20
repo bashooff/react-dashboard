@@ -7,5 +7,5 @@ class Loans(ObjectType):
     term = Int(required=True)
     interest = Int(required=True)
     grade = String(required=True)
-    status = String(required=True)
+    status = String(required=True)= String(required=True)= String(required=True)
     borrower = String(required=True)

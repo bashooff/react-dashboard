@@ -1,28 +1,30 @@
 import  {Pie}  from 'react-chartjs-2'
 
-const Piechart = () => {
+const Piechart = (props) => {
 
+    console.log(props.data)
+
+    const chartLabels = props.labels
+    const chartData = Object.values(props.data)
+    const chartTitle = props.title
+
+    console.log(chartData)
+    
     const data = {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: chartLabels,
         datasets: [
           {
             label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
+            data: chartData,
             backgroundColor: [
                 '#106d1a',
-                '#40853d',
-                '#649e5e',
-                '#87b781',
-                '#abd0a4',
-                '#ceeac9'
+                '#f17d5d'
+                
             ],
             borderColor: [
                 '#106d1a',
                 '#40853d',
-                '#649e5e',
-                '#87b781',
-                '#abd0a4',
-                '#ceeac9'
+                
             ],
             borderWidth: 1,
           },
@@ -32,7 +34,7 @@ const Piechart = () => {
     return(
         <div>
             <div className='header'>
-                <h5 className='title'>Pie Chart</h5>
+                <h5 className='title'>{chartTitle}</h5>
             </div>
             <Pie data={data} />
         </div>

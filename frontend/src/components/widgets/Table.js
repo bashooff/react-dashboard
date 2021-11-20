@@ -1,46 +1,36 @@
+import loan from "../../data/loan.json"
+import "./Table.css"
+
 const Table = () => {
+
+    console.log(loan)
+    const loanData = loan
+
     return(
-        <div>
+        <div className="wrapper overflow">
             <table class="table">
                 <thead>
                     <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
+                    <th scope="col">Borrower</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Grade</th>
+                    <th scope="col">Interest</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Term</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                    </tr>
+                    {loanData!==undefined && loanData.map((item, index) => {
+                        return(
+                        <tr key={index}>
+                            <td>{item.grade}</td>
+                            <td>{item.amount}</td>
+                            <td>{item.status}</td>
+                            <td>%{item.interest/100}</td>
+                            <td>{item.borrower}</td>
+                            <td>{item.term}</td>
+                        </tr>
+                    )})}
                 </tbody>
             </table>
         </div>

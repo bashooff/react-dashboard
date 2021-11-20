@@ -1,5 +1,11 @@
+.normal-header-container {
+    position: relative;
+}
+
+
 .navbar, .navbar-expand-lg, .navbar-light {
     background-color:#f5f9fa;
+    
     
     
 }

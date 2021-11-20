@@ -1,0 +1,6 @@
+.wrapper.overflow {
+    overflow-y: scroll;
+    display: inline-block;
+    height:35rem;
+    width: 100%;
+  }
