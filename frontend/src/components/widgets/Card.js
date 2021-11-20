@@ -6,7 +6,7 @@ const Card = (props) => {
     const cardWidth = props.width
 
     return(
-        <div className="card" style={{borderRadius: "25px", height:cardHeight, width:cardWidth}}>
+        <div className="card" style={{borderRadius: "0.5rem", height:cardHeight, width:cardWidth}}>
             <div className="card-body">
                 
                     {props.children}

@@ -12,12 +12,9 @@ const Dashboard = () => {
     return(
         <div>
             <h2>Dashboard overview</h2>
-            <div className="row">
-                <Card title="Overview" height="18rem" width="60rem">
-                <div className="row mt-5">
-                    
-                    <div className="col  my-col">
-                        <Card title="Borrowers" text="borrowers overview" height="10rem" width="16rem">
+            <div className="row mt-5">
+                    <div className="col my-col">
+                        <Card title="Borrowers" text="borrowers overview" height="10rem" width="100%">
                             <div className="card-icon">
                                 <FcPackage></FcPackage>
                             </div>
@@ -30,7 +27,7 @@ const Dashboard = () => {
                         </Card>
                     </div>
                     <div className="col my-col">
-                        <Card title="Loans" height="10rem" width="16rem">
+                        <Card title="Loans" height="10rem" width="100%">
                         <div className="card-icon">
                                 <FcList></FcList>
                             </div>
@@ -43,7 +40,7 @@ const Dashboard = () => {
                         </Card>
                     </div>
                     <div className="col my-col">
-                        <Card title="returns" height="10rem" width="16rem">
+                        <Card title="returns" height="10rem" width="97%">
                         <div className="card-icon">
                                 <FcSalesPerformance></FcSalesPerformance>
                             </div>
@@ -55,29 +52,23 @@ const Dashboard = () => {
                             </div>
                         </Card>
                     </div>
-                    {/* <div className="col-md-3 my-col">
-                        <Card title="returns" height="10rem" width="22rem">
-                        <div className="card-icon">
-                                <FcBookmark></FcBookmark>
-                            </div>
-                            <div className="card-title">
-                                Defaults
-                            </div>
-                            <div className="card-text">
-                                56
-                            </div>
-                        </Card>
-                    </div> */}
-                    </div>
-                </Card>
-                <div className="col-2">
-                    <Card></Card>
-                </div>
             </div>
-                <div className="col-md-11 mt-5">
-                    <Card title="Line chart" height="30rem" width="95rem">
-                        {/* <Linechart /> */}
+                <div className="col-md-12 mt-5">
+                    <Card title="Line chart" height="100%" width="99%">
+                        <Linechart />
                     </Card>
+                </div>
+                <div className="row">
+                <div className="col-md-7 mt-5">
+                    <Card title="Line chart" height="100%" width="99%">
+                        <Linechart />
+                    </Card>
+                </div>
+                <div className="col-md-5 mt-5">
+                    <Card title="Line chart" height="100%" width="98%">
+                        <Linechart />
+                    </Card>
+                </div>
                 </div>
                 
             </div>

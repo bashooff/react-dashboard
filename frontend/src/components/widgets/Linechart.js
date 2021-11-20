@@ -1,6 +1,6 @@
 import Highcharts from "highcharts"
 import HighchartsReact from 'highcharts-react-official'
-import { Line } from 'react-chartjs-2'
+import  {Line}  from 'react-chartjs-2'
 
 
 const Linechart = () => {
