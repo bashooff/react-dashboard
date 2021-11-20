@@ -21,13 +21,13 @@ const Linechart = () => {
     datasets: [
       {
         borderColor: "#6bd098",
-        backgroundColor: "#6bd098",
+        backgroundColor: "#40853d",
         pointRadius: 0,
         pointHoverRadius: 0,
         borderWidth: 3,
         tension: 0.4,
         fill: true,
-        data: [300, 310, 316, 322, 330, 326, 333, 345, 338, 354],
+        data: [300, 310, 316, 322, 330, 326, 333, 345, 338, 300],
       },
       {
         borderColor: "#f17e5d",

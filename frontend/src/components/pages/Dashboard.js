@@ -1,9 +1,9 @@
 import "./Dashboard.css";
 import Card from "../widgets/Card";
 import Linechart from "../widgets/Linechart";
-import Highcharts from "highcharts"
-import HighchartsReact from 'highcharts-react-official'
+import Piechart from "../widgets/Piechart";
 import { FcPackage, FcSalesPerformance, FcList, FcBookmark } from "react-icons/fc";
+import Table from "../widgets/Table";
 
 const Dashboard = () => {
 
@@ -58,19 +58,18 @@ const Dashboard = () => {
                         <Linechart />
                     </Card>
                 </div>
-                <div className="row">
-                <div className="col-md-7 mt-5">
-                    <Card title="Line chart" height="100%" width="99%">
-                        <Linechart />
-                    </Card>
+                <div className="row mb-5">
+                    <div className="col-md-7 mt-5">
+                        <Card title="Line chart" height="80%" width="99%">
+                            <Table />
+                        </Card>
+                    </div>
+                    <div className="col-md-5 mt-5">
+                        <Card title="Line chart" height="100%" width="98%">
+                            <Piechart />
+                        </Card>
+                    </div>
                 </div>
-                <div className="col-md-5 mt-5">
-                    <Card title="Line chart" height="100%" width="98%">
-                        <Linechart />
-                    </Card>
-                </div>
-                </div>
-                
             </div>
         
     )

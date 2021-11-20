@@ -7,16 +7,9 @@ import LoanData from "./LoanData"
 const Data = () => {
     return(
         <div>
-            <div className="row justify-content-center">
-                <div className="col-2">
-                    <Sidebar />
-                </div>
-                <div className="col-10">
-                    <Header />
-                    <LoanData></LoanData>
-                </div>
-            </div>
+            <LoanData></LoanData>
         </div>
+         
     )
 }
 
