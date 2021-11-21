@@ -36,12 +36,12 @@ def ping():
     return loan_data
 
 @app.get('/borrowers')
-def read_borrowers(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+def read_borrowers(skip: int = 0, limit: int = 500, db: Session = Depends(get_db)):
     borrowers = queries.get_borrowers(db, skip=skip, limit=limit)
     return borrowers
 
 @app.get('/loans')
-def read_loans(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+def read_loans(skip: int = 0, limit: int = 500, db: Session = Depends(get_db)):
     loans = queries.get_loans(db, skip=skip, limit=limit)
     return loans
 

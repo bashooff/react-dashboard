@@ -15,9 +15,10 @@ const Dashboard = () => {
 
 
     const fetchLoanData = () =>  {
-        fetch("http://localhost:8000/")
+        fetch("http://localhost:8000/loans")
         .then(res => res.json())
         .then(payload=> {
+            console.log(payload)
            setLoanData(payload)})
     }
 
@@ -28,13 +29,16 @@ const Dashboard = () => {
     }, [])
 
 
-    const status = [...loanData.map(item => item.borrower)]
+    const status = [...loanData.map(item => item.status)]
     const result = {};
     for(var i = 0; i < status.length; ++i) {
         if(!result[status[i]])
             result[status[i]] = 0;
         ++result[status[i]];
     }
+
+    const totalBorrowers = [...new Set(loanData.map(item => item.borrower_id))].length // number of unique borrower id's
+    const totalLoans = [...loanData.map(item => item.loan_id)].length
 
     console.log(result)
     
@@ -53,7 +57,7 @@ const Dashboard = () => {
                                 Borrowers
                             </div>
                             <div className="card-text">
-                                1,200
+                                {totalBorrowers}
                             </div>
                         </Card>
                     </div>
@@ -66,7 +70,7 @@ const Dashboard = () => {
                                 Loans
                             </div>
                             <div className="card-text">
-                                1,356
+                               {totalLoans}
                             </div>
                         </Card>
                     </div>
@@ -99,7 +103,7 @@ const Dashboard = () => {
             <div className="row mb-5">
                 <div className="col-md-7 mt-5">
                     <Card title="Line chart" height="100%" width="99%">
-                        {/* <Table /> */}
+                        <Table />
                     </Card>
                 </div>
                 <div className="col-md-5 mt-5">
