@@ -5,13 +5,28 @@ import Piechart from "../widgets/Piechart";
 import Barchart from "../widgets/Barchart";
 import { FcPackage, FcSalesPerformance, FcList, FcBookmark } from "react-icons/fc";
 import Table from "../widgets/Table";
-import loan from "../../data/loan.json"
+import { useState, useEffect } from "react";
+
 
 const Dashboard = () => {
 
     const defaultLabels = ["Current", "Default"]
+    const [loanData, setLoanData] = useState([])
 
-    const loanData = loan
+
+    const fetchLoanData = () =>  {
+        fetch("http://localhost:8000/")
+        .then(res => res.json())
+        .then(payload=> {
+           setLoanData(payload)})
+    }
+
+    useEffect(() => {
+
+        fetchLoanData()
+
+    }, [])
+
 
     const status = [...loanData.map(item => item.borrower)]
     const result = {};
@@ -84,11 +99,11 @@ const Dashboard = () => {
             <div className="row mb-5">
                 <div className="col-md-7 mt-5">
                     <Card title="Line chart" height="100%" width="99%">
-                        <Table />
+                        {/* <Table /> */}
                     </Card>
                 </div>
                 <div className="col-md-5 mt-5">
-                    <Card title="Line chart" height="55%" width="98%">
+                    <Card title="Line chart" height="100%" width="98%">
                         <Barchart></Barchart>
                     </Card>
                 </div>

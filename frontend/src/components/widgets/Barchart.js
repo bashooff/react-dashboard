@@ -28,19 +28,6 @@ const Barchart = () => {
           },
         ],
       };
-      
-      const options = {
-        scales: {
-          yAxes: [
-            {
-              ticks: {
-                beginAtZero: true,
-              },
-            },
-          ],
-        },
-      };
-    
 
 
 
@@ -53,7 +40,7 @@ const Barchart = () => {
       <div className='header'>
         <h5 className='title'>Vertical Bar Chart</h5>
       </div>
-      <Bar data={data} options={options} />
+      <Bar data={data}/>
     </div>
     
   );

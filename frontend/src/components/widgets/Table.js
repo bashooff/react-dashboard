@@ -1,4 +1,4 @@
-import loan from "../../data/loan.json"
+// import loan from "../../data/loan.json"
 import "./Table.css"
 
 const Table = () => {
