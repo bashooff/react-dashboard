@@ -20,7 +20,8 @@ const Linechart = () => {
     ],
     datasets: [
       {
-        borderColor: "#6bd098",
+        label: "green",
+        borderColor: "#40853d",
         backgroundColor: "#40853d",
         pointRadius: 0,
         pointHoverRadius: 0,
@@ -30,6 +31,7 @@ const Linechart = () => {
         data: [300, 310, 316, 322, 330, 326, 333, 345, 338, 300],
       },
       {
+        label: "red",
         borderColor: "#f17e5d",
         backgroundColor: "#f17e5d",
         pointRadius: 0,
@@ -40,6 +42,7 @@ const Linechart = () => {
         data: [320, 340, 365, 360, 370, 385, 390, 384, 408, 420],
       },
       {
+        label: "yellow",
         borderColor: "#fcc468",
         backgroundColor: "#fcc468",
         pointRadius: 0,
@@ -56,28 +59,32 @@ const Linechart = () => {
     plugins: {
       legend: { display: true },
       tooltip: { enabled: true },
+      labels: { display: true}
     },
     scales: {
-      y: {
-        ticks: {
-          color: "#ffffff",
-          beginAtZero: false,
-          maxTicksLimit: 5,
-        },
-        grid: {
-          drawBorder: false,
-          display: false,
-        },
-      },
-      x: {
+      yAxes: 
+        {
+          type: 'linear',
+          display: true,
+          position: 'left',
+          id: 'y-axis-1',
+          grid:{
+            display:false,
+            drawBorder: false
+          }
+        }
+      ,
+      xAxes: {
+        display: true,
         barPercentage: 1.6,
         grid: {
           drawBorder: false,
           display: false,
         },
         ticks: {
-          padding: 20,
+          // padding: 20,
           color: "#ffffff",
+          display: true,
         },
       },
     }

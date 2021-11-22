@@ -40,6 +40,8 @@ const Dashboard = () => {
     const totalBorrowers = [...new Set(loanData.map(item => item.borrower_id))].length // number of unique borrower id's
     const totalLoans = [...loanData.map(item => item.loan_id)].length
 
+    
+
     console.log(result)
     
 
